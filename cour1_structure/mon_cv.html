@@ -1,76 +1,126 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="mon_cv.css">
+
+  <title>Margaux Solia - Portfolio</title>
 </head>
 
-<body style="background-image: url('Stars.png'); background-size: cover; background-attachment: fixed; margin:0; padding: 0%; font-family: 'Alumni Sans Pinstripe';">
-    <div style=" width: 65%; padding: 60px;">
+<body>
 
-    <div style="max-width:800px; margin:0; padding: 60px; display: flex; align-items: center; gap: 20px;"> 
-    <img src="266768786.jpg" alt="photo" style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;"
-    onmouseover='document.getElementById("tip").style.display="block";'
-    onmouseout='document.getElementById("tip").style.display="none";'>
-  <div id="tip" style="display:none; position: absolute; background-color: black; color: white; margin-right:50px;
-       padding: 10px 25px; border-radius: 5px; top: 50px; left: 360px; white-space: nowrap; font-size: 30px;">
-    Marseille — Mobile région PACA | 30 ans <br>
-    Bachelor Informatique | Octobre 2026 <br>
-    En recherche d'Alternance | Disponible dès Septembre 2027 
-  </div>
-    <h1 style="text-align: left; font-size: 100px; margin-bottom: 0;">Margaux Solia</h1>
-  </div>
+  <div class="container">
 
-  <p style="text-align: justify; font-size: 30px;">
-    <strong>Artiste Pluridisciplinaire</strong> - Artiste Pluridisciplinaire </strong> - Illustration, Editorial, Tatouage, Collage, Photographie. 
-    J'ai forgé mon exigence au de six ans d'experience commerciale au sein de maisons de luxe. Mon profil alliant créativité et rigueur me permet aujourd'hui d'aborder ma 
-    reconversion vers le développement web et logiciel avec un regard singulier : le sens de la composition visuelle, l'attention au détail et la capacité à penser l'expérience 
-    utilisateur sont autant d'atouts naturellement transférables à la conception d'interfaces et d'applications.
-  </p>
+    <div class="profile">
+      <img
+        src="266768786.jpg"
+        alt="Photo de Margaux Solia"
+        class="profile-photo"
+        data-tip="tip"
+      >
 
-  <h2 style="text-align: left; font-size: 45px;">Mes compétences</h2>
-
-  <div style="position: relative; display: inline-block;">
-    <img src="HTML JS CSS.png" alt="logos"
-      style="width:400px; display: block; margin-bottom: 50px; margin-top: 40px;"
-      onmouseover='document.getElementById("tip2").style.display="block";'
-      onmouseout='document.getElementById("tip2").style.display="none";'>
-    <div id="tip2" style="display:none; position: absolute; background-color: black; color: white;
-         padding: 10px 25px; border-radius: 5px; top: 50px; left: 450px; white-space: nowrap; font-size: 30px;">
-      HTML5 - Structure des pages web<br>
-      CSS - Mise en forme et design<br>
-      Javascript - Interactivité et animations
-
-    </div>
-  </div>
-
-  <p style="text-align: justify; font-size: 30px;">
-    <strong>Autodidacte & Audacieuse </strong> - j'ai démarré mes premiers projets web il y a six mois à peine, et je ne me suis pas arrêtée depuis. Je suis attirée par la logique du code autant que par l'esthétique des interfaces, j'apprend vite, je cherche toujours plus loin, et je teste encore et encore. Bidouiller jusqu'à comprendre, debugger jusqu'à la solution : c'est dans les détails que la passion s'installe.
-  </p>
-
-  <div style="position: relative; display: inline-block;">
-    <img src="cyberlogo.jpg" alt="cyberlogo"
-      style="width:300px; display: block; margin-bottom: 10px;"
-      onmouseover='document.getElementById("tip3").style.display="block";'
-      onmouseout='document.getElementById("tip3").style.display="none";'>
-    <div id="tip3" style="display:none; position: absolute; background-color: black; color: white;
-         padding: 10px 25px; border-radius: 5px; top: 60px; left: 250px; white-space: nowrap; font-size: 30px;">
-    Administration réseau : Installer, configurer et maintenir les infrastructures et équipements réseau.<br>
-    Sécurité informatique : Protéger les systèmes, gérer les accès et prévenir les cyberattaques.<br>
-    Supervision et dépannage : Surveiller les performances du réseau et résoudre les incidents techniques.<br>
+      <div id="tip" class="tooltip">
+        Marseille — Mobile région PACA | 30 ans <br>
+        Bachelor Informatique | Octobre 2026 <br>
+        En recherche d'Alternance | Disponible dès Septembre 2027
       </div>
+
+      <h1>Margaux Solia</h1>
+    </div>
+
+    <p class="description">
+      <strong>Artiste Pluridisciplinaire</strong> -
+      Illustration, Editorial, Tatouage, Collage, Photographie.
+      J'ai forgé mon exigence au cours de six ans d'expérience commerciale
+      au sein de maisons de luxe. Mon profil alliant créativité et rigueur
+      me permet aujourd'hui d'aborder ma reconversion vers le développement
+      web et logiciel avec un regard singulier : le sens de la composition
+      visuelle, l'attention au détail et la capacité à penser l'expérience
+      utilisateur sont autant d'atouts naturellement transférables à la
+      conception d'interfaces et d'applications.
+    </p>
+
+    <h2>Mes compétences</h2>
+
+    <div class="skill-image">
+      <img
+        src="HTML JS CSS.png"
+        alt="Logos HTML, CSS et JavaScript"
+        class="web-skills"
+        data-tip="tip2"
+      >
+
+      <div id="tip2" class="tooltip">
+        HTML5 - Structure des pages web<br>
+        CSS - Mise en forme et design<br>
+        JavaScript - Interactivité et animations
+      </div>
+    </div>
+
+    <p class="description">
+      <strong>Autodidacte & Audacieuse</strong> -
+      J'ai démarré mes premiers projets web il y a six mois à peine,
+      et je ne me suis pas arrêtée depuis. Je suis attirée par la logique
+      du code autant que par l'esthétique des interfaces, j'apprends vite,
+      je cherche toujours plus loin, et je teste encore et encore.
+      Bidouiller jusqu'à comprendre, déboguer jusqu'à la solution :
+      c'est dans les détails que la passion s'installe.
+    </p>
+
+    <div class="skill-image">
+      <img
+        src="cyberlogo.jpg"
+        alt="Logo cybersécurité"
+        class="cyber-skills"
+        data-tip="tip3"
+      >
+
+      <div id="tip3" class="tooltip">
+        Administration réseau : Installer, configurer et maintenir les infrastructures et équipements réseau.<br>
+        Sécurité informatique : Protéger les systèmes, gérer les accès et prévenir les cyberattaques.<br>
+        Supervision et dépannage : Surveiller les performances du réseau et résoudre les incidents techniques.
+      </div>
+    </div>
+
+    <p class="description">
+      <strong>Nouveaux Horizons</strong> -
+      Curieuse de l'envers du décor, je m'initie à la cybersécurité
+      et à l'univers des réseaux — un terrain technique qui me passionne
+      autant qu'il me challenge. Comprendre comment les systèmes
+      communiquent, où ils sont vulnérables, comment les protéger :
+      autant de défis que j'aborde avec la même ténacité que le reste.
+      La cybersécurité, c'est mon prochain terrain à conquérir.
+    </p>
+
+    <footer>
+      <a href="https://github.com/Mumumullax" target="_blank" rel="noopener noreferrer">
+        <button class="github-button" type="button">
+          MON GITHUB
+        </button>
+      </a>
+    </footer>
+
   </div>
 
-  <p style="text-align: justify; font-size: 30px;"> 
-<strong> Nouveaux Horizons </strong> - Curieuse de l'envers du décor, je m'initie à la cybersécurité et à l'univers des réseaux — un terrain technique qui me passionne autant qu'il me challenge. Comprendre comment les systèmes communiquent, où ils sont vulnérables, comment les protéger : autant de défis que j'aborde avec la même ténacité que le reste. La cybersécurité, c'est mon prochain terrain à conquérir.
-</p>
-<footer> 
-    <a href="https://github.com/Mumumullax" target="_blank">
-        <button style="background-color:  black; color: white; padding: 10px 25px; margin-top: 20px; border: none; font-size: 30px; font-family: 'Alumni Sans Pinstripe'; cursor: pointer; border-radius: 5px; "> 
-        MON GITHUB
-        </button>
-    </a>
-</footer>
+  <script>
+    document.querySelectorAll("[data-tip]").forEach((image) => {
+      const tooltip = document.getElementById(image.dataset.tip);
+
+      image.addEventListener("mouseenter", () => {
+        tooltip.style.display = "block";
+      });
+
+      image.addEventListener("mouseleave", () => {
+        tooltip.style.display = "none";
+      });
+    });
+  </script>
+
 </body>
 </html>
+```

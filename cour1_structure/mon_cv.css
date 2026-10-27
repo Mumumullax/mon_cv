@@ -1,0 +1,118 @@
+/* Mise en forme générale */
+body {
+    background-image: url("Stars.png");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+.container {
+    width: 65%;
+    padding: 60px;
+    box-sizing: content-box;
+}
+
+/* Présentation du profil */
+
+.profile {
+    max-width: 800px;
+    margin: 0;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+h1 {
+    text-align: left;
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+/* Paragraphes */
+
+.description {
+    text-align: justify;
+    font-size: 30px;
+}
+
+/* Titres de section */
+
+h2 {
+    text-align: left;
+    font-size: 45px;
+}
+
+/* Images des compétences */
+
+.skill-image {
+    position: relative;
+    display: inline-block;
+}
+
+.web-skills {
+    width: 400px;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.cyber-skills {
+    width: 300px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Infobulles */
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 30px;
+    z-index: 10;
+}
+
+#tip {
+    top: 50px;
+    left: 360px;
+    margin-right: 50px;
+}
+
+#tip2 {
+    top: 50px;
+    left: 450px;
+}
+
+#tip3 {
+    top: 60px;
+    left: 250px;
+}
+
+/* Bouton GitHub */
+
+.github-button {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border: none;
+    font-size: 30px;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
